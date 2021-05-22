@@ -1,0 +1,156 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- favicons -->
+
+<link rel="icon" type="image/png" href="{% static 'images/title_icon.png' %}" />
+  <!-- favicons -->
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom-responsive-style.css' %}">
+<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/plugin-active.js' %}"></script>
+<!--  contact form css-->
+<!--  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <!--  animation-->
+
+ <!-- Footer -->
+<link rel="stylesheet" href="{% static 'css/footer/footer.css' %}">
+<!--End of  Footer -->
+  <!-- recaptcha -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- end of recaptcha -->
+
+
+</head>
+<body>
+<!-- header -->
+  <header>
+    <div class="mobile-logo">
+    <a href=""><img src="{% static 'images/ds-logo.png' %}"></a>
+  </div>
+<!--  <a class="menu-toggle rounded" href="#">-->
+<!--    <i class="fa fa-bars"></i>-->
+<!--  </a>-->
+<!--  <nav id="sidebar-wrapper">-->
+<!--    <ul class="sidebar-nav">-->
+<!--      <li class="sidebar-brand">-->
+<!--        <a class="smooth-scroll" href="#Header"></a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#Services">Our digital services</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#OurWork">Our Work</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#OurBlog">Our Blog</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#Testimonials">Testimonials</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#contacts">Contact</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+  </header>
+
+  <!-- end of header -->
+<!-- banner -->
+<section id="Banner">
+  <div class="logo">
+<!-- this one is the logo   -->
+    <img src="{% static 'images/logo_new3.png' %}" width="250px" height="180px">
+  </div>
+  <div class="blacksection">
+
+    <h1 class="ml2">We Creates  <br>beyond your<br>Imaginations</h1>
+  </div>
+</section>
+
+<a href="#Services" class="mscroll"><img src="{% static 'images/mouse-icon.png' %}" alt="mouse icon"></a>
+
+
+{% block content %}
+{% endblock %}
+
+<!-- footer ---->
+
+
+
+<!--<footer id="Contact"  class="text-center text-lg-start text-white"-->
+<!--          style="background-color: #1c2331">-->
+
+<!--  <div class="container">-->
+<!--       <div class="row">-->
+<!--          <div class="col-sm-12 col-md-6">-->
+<!--            <h4>ESSBEE INFOTECH</h4><br>-->
+<!--            <h6>ESS  BEE TECHSTRATEGIES PVT.LTD <br>-->
+<!--                 NO.55/1631,PARAKOTTU TOWERS,<BR>-->
+<!--                2ND FLOOR,DEVENTH CROSS ROAD<BR>-->
+<!--                ERNAKULAM,KERALA,INDIA-682020<BR><BR>-->
+<!--                Email:ebeeinfotech@gmail.com</i><br><br>-->
+<!--                Mobile:0123456789/9876543210-->
+<!--            </h6>-->
+
+<!--          </div>-->
+
+<!--          <div class="col-xs-6 col-md-3">-->
+<!--            <h4>OUR SERVICES</h4>-->
+<!--            <ul class="footer-links">-->
+<!--              <li>Software Development</li>-->
+<!--              <li>Mobile Application Development</li>-->
+<!--              <li>Hardware and Networking</li>-->
+<!--              <li>Cloud Computing</li>-->
+<!--              <li>vMWare Support</li>-->
+
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-xs-6 col-md-3">-->
+<!--            <h4>QUICK LINKS</h4>-->
+<!--            <ul class="footer-links">-->
+<!--              <li><a href="about">About Us</a></li>-->
+<!--              <li><a href="contactUs">Contact Us</a></li>-->
+<!--              <li><a href="news">Latest News</a></li>-->
+<!--              <li><a href="privacy_policy">Privacy Policy</a></li>-->
+
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <hr>-->
+<!--&lt;!&ndash;    <h6><p>ESS BEE Infotech<br>Email:<br>Mobile: </p></h6>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <a href="#" class="email-btn"><span><i class="fa fa-envelope-o" aria-hidden="true"></i> Email Me</span></a>&ndash;&gt;-->
+<!--    <ul class="social-icons">-->
+<!--      <li><a href="https://www.facebook.com/Essbee-Infotech-546155818802137"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="https://twitter.com/EssbeeInfotech?s=09"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="https://www.instagram.com/essbeeinfotech"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="mailto:email@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="https://wa.me/message/RHUSMHHFYLDKD1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</footer>-->
+<!-- end of footer -->
+<!-- copyright -->
+<!-- <div class="copyright"><p>Copyrights@ 2021-2022</p>-->
+<!-- </div>-->
+ <div>
+
+  {% include 'include/footer.html'%}
+</div>
+</body>
+</html>

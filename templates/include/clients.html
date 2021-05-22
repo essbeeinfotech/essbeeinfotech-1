@@ -1,0 +1,30 @@
+{% extends 'base1.html' %}
+{% block title %}OUR CLIENTS {% endblock %}
+{% block content %}
+{% load static %}
+<!-- our works -->
+<section id="OurWork">
+  <div class="container">
+    <h2> Our Clients</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <div class="grey-box">
+          <img src="{% static 'images/sponser.png' %}" alt="Sponser">
+
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+        {% for works in work %}
+        <div class="each-work space">
+            <img src="{{works.img.url}}" alt="{{works.company_name}}">
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end of our works -->
+
+{% endblock %}

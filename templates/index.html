@@ -1,0 +1,346 @@
+{% extends 'base.html' %}
+{% block title %}ESSBEE TECHSTRATEGIES PVT.LTD {% endblock %}
+<!--{% load static %}-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<title>ESSBEE TECHSTATEGIES PVT.LTD</title>-->
+<!--<meta charset="utf-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">-->
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--&lt;!&ndash; favicons &ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="57x57" href="{% static 'images/apple-icon-57x57.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="60x60" href="{% static 'images/apple-icon-60x60.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/apple-icon-72x72.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="76x76" href="{% static 'images/apple-icon-76x76.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/apple-icon-114x114.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="120x120" href="{% static 'images/apple-icon-120x120.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="144x144" href="{% static 'images/apple-icon-144x144.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="152x152" href="{% static 'images/apple-icon-152x152.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-icon-180x180.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="icon" type="image/png" sizes="192x192"  href="{% static 'images/android-icon-192x192.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="icon" type="image/png" sizes="96x96" href="{% static 'images/favicon-96x96.png' %}">&ndash;&gt;-->
+<!--&lt;!&ndash;<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">&ndash;&gt;-->
+<!--<link rel="icon" type="image/png" href="{% static 'images/title_icon.png' %}" />-->
+<!--  &lt;!&ndash; favicons &ndash;&gt;-->
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">-->
+<!--<link rel="stylesheet" type="text/css" href="{% static 'css/custom-responsive-style.css' %}">-->
+<!--<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'js/plugin-active.js' %}"></script>-->
+<!--&lt;!&ndash;  contact form css&ndash;&gt;-->
+<!--&lt;!&ndash;  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45; Include the above in your HEAD tag &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--<link rel="stylesheet" href="{% static 'css/contact.css' %}">-->
+<!--    &lt;!&ndash;  animation&ndash;&gt;-->
+
+<!-- &lt;!&ndash; Footer &ndash;&gt;-->
+<!--<link rel="stylesheet" href="{% static 'css/footer.css' %}">-->
+<!--&lt;!&ndash;End of  Footer &ndash;&gt;-->
+<!--  &lt;!&ndash; recaptcha &ndash;&gt;-->
+<!--  <script src='https://www.google.com/recaptcha/api.js'></script>-->
+<!--  &lt;!&ndash; end of recaptcha &ndash;&gt;-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; header &ndash;&gt;-->
+<!--  <header>-->
+<!--    <div class="mobile-logo">-->
+<!--    <a href=""><img src="{% static 'images/ds-logo.png' %}"></a>-->
+<!--  </div>-->
+<!--  <a class="menu-toggle rounded" href="#">-->
+<!--    <i class="fa fa-bars"></i>-->
+<!--  </a>-->
+<!--  <nav id="sidebar-wrapper">-->
+<!--    <ul class="sidebar-nav">-->
+<!--      <li class="sidebar-brand">-->
+<!--        <a class="smooth-scroll" href="#Header"></a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#Services">Our digital services</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#OurWork">Our Work</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#OurBlog">Our Blog</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#Testimonials">Testimonials</a>-->
+<!--      </li>-->
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="smooth-scroll" href="#contacts">Contact</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--  </header>-->
+
+<!--  &lt;!&ndash; end of header &ndash;&gt;-->
+<!--&lt;!&ndash; banner &ndash;&gt;-->
+<!--<section id="Banner">-->
+<!--  <div class="logo">-->
+<!--&lt;!&ndash; this one is the logo   &ndash;&gt;-->
+<!--    <img src="{% static 'images/logo_new3.png' %}" width="250px" height="180px">-->
+<!--  </div>-->
+<!--  <div class="blacksection">-->
+
+<!--    <h1 class="ml2">We Creates  <br>beyond your<br>Imaginations</h1>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--<a href="#Services" class="mscroll"><img src="{% static 'images/mouse-icon.png' %}" alt="mouse icon"></a>-->
+
+<!--&lt;!&ndash; end of banner &ndash;&gt;-->
+{% block content %}
+<!-- services -->
+<section id="Services">
+  <div class="container">
+    <h2>Our digital services</h2>
+    <div class="row">
+	{% for i in results %}
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <div class="each-services">
+         <a href="{{i.get_detail_url }}"><img src="{{i.img_icon.url}}" alt="Services" ></a>
+          </div>
+          <div>
+          <h3>{{i.name}}</h3>
+          </div>
+        <div>
+          <p>{{i.desc}}</p>
+        </div>
+        </div>
+      {% endfor %}
+<!--      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">-->
+<!--        <div class="each-services">-->
+<!--          <img src="{% static 'images/web-design.jpg' %}" alt="Services">-->
+<!--          <h3>Webdesign &amp; Development</h3>-->
+<!--          <p>For businesses today, it’s not just about having a website. It's about having an effective, multifunctional portal that plays a crucial marketing role. Whether your business is B2B, B2C or both, your website should spearhead your Demand Acceleration by inviting, informing and engaging your target audience.</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">-->
+<!--        <div class="each-services">-->
+<!--          <img src="{% static 'images/web-hosting.jpg' %}" alt="Services">-->
+<!--          <h3>Web Hosting</h3>-->
+<!--          <p> Web hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies and services needed for the website or webpage to be viewed in the Internet.</p>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </div>
+
+</section>
+
+<!-- end of services -->
+
+<!-- our works -->
+<section id="OurWork">
+  <div class="container">
+    <h2>Some of Our Clients</h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        <div class="grey-box">
+          <img src="{% static 'images/sponser.png' %}" alt="Sponser">
+          <div class="sponser">
+            <h4><a href="clients">MORE CLIENTS</a></h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+        {% for works in work %}
+        <div class="each-work space">
+            <img src="{{works.img.url}}" alt="{{works.company_name}}">
+        </div>
+        {% endfor %}
+<!--         <div class="each-work">-->
+<!--          <img src="{% static 'images/designer.jpg' %}" alt="Designer">-->
+<!--        </div>-->
+<!--        <div class="each-work space">-->
+<!--          <img src="{% static 'images/mountain.jpg' %}" alt="Mountain">-->
+<!--        </div>-->
+<!--         <div class="each-work">-->
+<!--          <img src="{% static 'images/brandname.jpg' %}" alt="Brandname">-->
+<!--        </div>-->
+<!--        <div class="each-work space">-->
+<!--          <img src="{% static 'images/stores.jpg' %}" alt="Stores">-->
+<!--        </div>-->
+<!--         <div class="each-work">-->
+<!--          <img src="{% static 'images/hipster.jpg' %}" alt="Hipster">-->
+<!--        </div>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end of our works -->
+
+<!-- blog -->
+<section id="OurBlog"> 
+  <div class="container">
+    <h2>Our Blog</h2>
+    <p>A frequent, chronological publication of<br /> personal thoughts and Web links.</p>
+    <div class="blog-wrap">
+
+      {% for i in blog %}
+
+
+
+      <div class="each-block clearfix {% if forloop.first %}one{% elif forloop.last %} three {% else %} two {% endif %}">
+        <div class="icon">
+          <img src="{% static 'images/blog-icon.png' %}">
+        </div>
+        <div class="blog-intro">
+          <h3>{{i.heading}}..</h3>
+          <p>{{i.desc}}</p>
+        </div>
+      </div>
+      {% endfor %}
+
+<!--      <div class="each-block clearfix two">-->
+<!--        <div class="icon">-->
+<!--          <img src="{% static 'images/blog-icon.png' %}">-->
+<!--        </div>-->
+<!--        <div class="blog-intro">-->
+<!--          <h3>Is Your Content Strategy Playing..</h3>-->
+<!--          <p>Compelling creative assets play a major role in the success of your Paid Customer Acquisition program..</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="each-block clearfix three">-->
+<!--        <div class="icon">-->
+<!--          <img src="{% static 'images/blog-icon.png' %}">-->
+<!--        </div>-->
+<!--        <div class="blog-intro">-->
+<!--          <h3>Glocalization Helps Small..</h3>-->
+<!--          <p>At Position², we combine creative thinking and best practices for each channel to develop engaging and effective assets to enhance your brand.. </p>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+    <div class="learnmore">
+      <a href="blog"><span>Learn more</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- end of blog -->
+
+<!-- Testimonials -->
+<section id="Testimonials">
+     <div class="container mt-5 mb-5">
+    <h2>Testimonials</h2>
+    <p>I just wanted to take a moment to appreciate the great work you guys are doing for our web projects. Thanks for your abundant patience and technical support whenever required, even during the odd hours.</p>
+    <br>
+         <div class="row g-2">
+   {% for test in test %}
+        <div class="col-md-4">
+            <div class="card p-3 text-center px-4">
+                <div class="user-image"> <img src="{{test.img.url}}" class="rounded-circle" width="80"> </div>
+                <div class="user-content">
+                    <h5 class="mb-0">{{test.author}}</h5> <p>{{test.job_position}}</p>
+                    <p>{{test.desc}}.</p>
+                </div>
+                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+            </div>
+        </div>
+{% endfor %}
+<!--        <div class="col-md-4">-->
+<!--            <div class="card p-3 text-center px-4">-->
+<!--                <div class="user-image"> <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80"> </div>-->
+<!--                <div class="user-content">-->
+<!--                    <h5 class="mb-0">Mark Smith</h5> <p>Web Developer</p>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+<!--                </div>-->
+<!--                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        -->
+<!--        <div class="col-md-4">-->
+<!--            <div class="card p-3 text-center px-4">-->
+<!--                <div class="user-image"> <img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle" width="80"> </div>-->
+<!--                <div class="user-content">-->
+<!--                    <h5 class="mb-0">Veera Duncan</h5> <p>Software Architect</p>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+<!--                </div>-->
+<!--                <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</div>
+</section>
+
+<!-- end of testimonials -->
+
+<!-- contact form -->
+  <div class="contact-form-section"  id="contacts">
+  {% include 'include/contact.html'%}
+</div>
+<!-- end of contact form -->
+
+<!--ivide aadd akkallo-->
+
+<!--contact details -->
+
+<!--<footer id="Contact"  class="text-center text-lg-start text-white"-->
+<!--          style="background-color: #1c2331">-->
+
+<!--  <div class="container">-->
+<!--       <div class="row">-->
+<!--          <div class="col-sm-12 col-md-6">-->
+<!--            <h5>ESSBEE INFOTECH</h5><br>-->
+<!--            <h6>ESS  BEE TECHSTRATEGIES PVT.LTD <br>-->
+<!--                 NO.55/1631,PARAKOTTU TOWERS,<BR>-->
+<!--                2ND FLOOR,DEVENTH CROSS ROAD<BR>-->
+<!--                ERNAKULAM,KERALA,INDIA-682020<BR><BR>-->
+<!--                Email:ebeeinfotech@gmail.com</i><br><br>-->
+<!--                Mobile:0123456789/9876543210-->
+<!--            </h6>-->
+
+<!--          </div>-->
+
+<!--          <div class="col-xs-6 col-md-3">-->
+<!--            <h5>OUR SERVICES</h5>-->
+<!--            <ul class="footer-links">-->
+<!--              <li><a href="">Software Development</a></li>-->
+<!--              <li><a href="">Mobile Application Development</a></li>-->
+<!--              <li><a href="">Hardware and Networking</a></li>-->
+<!--              <li><a href="">Cloud Computing</a></li>-->
+<!--              <li><a href="">vMWare Support</a></li>-->
+
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-xs-6 col-md-3">-->
+<!--            <h5>QUICK LINKS</h5>-->
+<!--            <ul class="footer-links">-->
+<!--              <li><a href="#">About Us</a></li>-->
+<!--              <li><a href="#">Contact Us</a></li>-->
+<!--              <li><a href="#">Contribute</a></li>-->
+<!--              <li><a href="#">Privacy Policy</a></li>-->
+<!--              <li><a href="#">Sitemap</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <hr>-->
+<!--&lt;!&ndash;    <h6><p>ESS BEE Infotech<br>Email:<br>Mobile: </p></h6>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <a href="#" class="email-btn"><span><i class="fa fa-envelope-o" aria-hidden="true"></i> Email Me</span></a>&ndash;&gt;-->
+<!--    <ul class="social-icons">-->
+<!--      <li><a href="https://www.facebook.com/Essbee-Infotech-546155818802137"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="https://twitter.com/EssbeeInfotech?s=09"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="https://www.instagram.com/essbeeinfotech"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="mailto:email@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>-->
+<!--      <li><a href="https://wa.me/message/RHUSMHHFYLDKD1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</footer>-->
+<!--&lt;!&ndash; end of contact details &ndash;&gt;-->
+<!--&lt;!&ndash; footer &ndash;&gt;-->
+<!-- <div class="copyright"><p>Copyrights@ 2021-2022</p>-->
+<!-- </div>-->
+<!--&lt;!&ndash; end of footer&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+
+
+{% endblock %}

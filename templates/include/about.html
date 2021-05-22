@@ -1,0 +1,132 @@
+{% extends 'base1.html' %}
+{% block title %}ABOUT US {% endblock %}
+{% load static %}
+{% block content %}
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  background-color:#D8D8D8;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Helping Clients Create the Future</p>
+  <p>Essbee Techstrategies combines tech expertise and business intelligence to catalyze change and deliver results.</p>
+  <p>Essbee Techstrategies Private Limited is a Private incorporated on 18 March 2021. It is classified as Non-govt company and is registered at Registrar of Companies, Ernakulam.</p>
+  <p>It is inolved in Other computer related activities [for example maintenance of websites of other firms/ creation of multimedia presentations for other firms etc.]
+  </p>
+</div>
+
+<h2 style="text-align:center; padding-top:20px;" >Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/person.jpg' %}" alt="profile" style="width:100%">
+      <div class="container">
+        <br>
+        <h3>MUHAMMED SHIBILY</h3>
+        <p class="title">CEO & Founder</p>
+        <p>Muhammed Shibily is registered with Ministry of Corporate Affairs (MCA). Their DIN is 09112539. Following is their current and past directorship holdings.</p>
+        <p>info@essbeeinfotech.com</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/person.jpg' %}" alt="profile" style="width:100%">
+      <div class="container">
+        <br>
+        <h3>ASHMI JAMAL</h3>
+        <p class="title"> Director</p>
+        <p>Ashmi Jamal is registered with Ministry of Corporate Affairs (MCA). Their DIN is 09112540. Following is their current and past directorship holdings.</p>
+        <p>info@essbeeinfotech.com</p>
+
+      </div>
+    </div>
+  </div>
+  
+<!--  <div class="column">-->
+<!--    <div class="card">-->
+<!--      <img src="{% static 'images/person1.jpg' %}" alt="John" style="width:100%">-->
+<!--      <div class="container">-->
+<!--        <h2>John Doe</h2>-->
+<!--        <p class="title">Designer</p>-->
+<!--        <p>Some text that describes me lorem ipsum ipsum lorem.</p>-->
+<!--        <p>john@example.com</p>-->
+<!--        <p><button class="button">Contact</button></p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+</div>
+{% endblock %}

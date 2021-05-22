@@ -1,0 +1,49 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %}MISSION AND VISION{% endblock %}
+{% block content %}
+<style>
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px
+    }
+</style>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+       <img src="{% static 'images/vision.jpg' %}" height="280px" width="280px" >
+    </div>
+    <div class="col-sm-8">
+        <h2><strong>OUR VALUES</strong></h2><br>
+        <h5><strong>VISION:</strong></h5> <p>Our Vision is to be a leading IT Solution company in our sector and progress in our current position in the entire market. We know that Customer’s growth is our growth and we commit our customers to help in achieving their business goals. We believe in work with the accuracy and best quality. We want to be known as the reliable, innovative and user friendly IT service provider in entire industry.</p>
+        <p>ESSBEE InfoTech is one of the prominent software companies that helps other organizations to transform into digital enterprises. It differentiates you from competitors in the market and provides better engagement with customers, partners and employees.</p>
+        <p>We clearly understand that all customer landscapes are not of same kind. That’s why ESSBEE sourcing methodology encompasses a clear solution especially crafted to address the clients' issues. We offer a phased approach towards your business drivers and help IT organizations to align their goals towards the overall vision of the business.</p>
+        <p>Our main aim is to develop in a constant manner and become a leading performer in this competitive global marketplace. Fortunately, we have been able to gather a crew of professionals that can shape and mold their collective experiences, all of them possess outstanding talent that can help to accelerate your organization.</p>
+        <p>We are committed to helping Public and Private Sector organizations companies to find, manage and optimize their workforce. We provide our services through a completely automated and Web-enabled delivery platform that helps save time & money and by focusing on our stated values of Employees First, Transparency and Flexibility.</p>
+        <p>We are inspiring our employees to accomplish goal. To grow current position and get a larger market as well as to provide the simple IT solutions to client. We understand the client’s requirement, analyses it and provide the best IT solutions. We satisfy our clients by our services and implements it with more effective software solution strategies.</p>
+      <h5><strong>MISSION:</strong></h5>
+        <h4 style="color:blue">"We Creates beyond your Imaginations"</h4>
+        <p>Our mission is to enhance business growth of our customers with High Professionalism, excellent pre and post sales service, Project tracking facility with 100 % accuracy in current status, timely project delivery, Providing High Security for our platforms, creative designs, development and to deliver market defining high quality solutions that create value and reliable competitive advantage to customers around the globe. No matter which industry you belong to, we brings every business as digital and ESSBEE Exceed client's expectations by going beyond software to provide best Web solutions that transform data into knowledge, enabling them to solve their problems. </p>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+{% endblock %}

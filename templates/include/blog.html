@@ -1,0 +1,74 @@
+{% extends 'base1.html' %}
+{% block title %}OUR BLOG {% endblock %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/blog/blog.css' %}" rel="stylesheet">
+<div class="blog-home3 py-5">
+  <div class="container">
+    <!-- Row  -->
+    <div class="row justify-content-center">
+      <!-- Column -->
+      <div class="col-md-8 text-center">
+        <h3 class="my-3">Latest News and Blog from WrapKit</h3>
+        <h6 class="subtitle font-weight-normal">You can relay on our amazing features list and also our customer services will be great experience for you without doubt</h6>
+      </div>
+      <!-- Column -->
+      <!-- Column -->
+    </div>
+    <div class="row mt-4">
+      <!-- Column -->
+       {% for blogs in blogs %}
+      <div class="col-lg-6">
+        <div class="card border-0 mb-4">
+          <img class="card-img-top" src="{{blogs.img.url}}">
+          <div class="date-pos text-center text-white p-3 bg-success-gradiant">{{blogs.author}} &nbsp; &nbsp; {{blogs.date}}</div>
+          <h5 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">{{blogs.heading}}</a></h5>
+          <p class="m-t-20">{{blogs.desc}} </p>
+        </div>
+      </div>
+       {% endfor %}
+      <!-- Column -->
+      <div class="col-lg-6">
+        <div class="row">
+          <!-- Column -->
+          {% for blogs in blog %}
+          <div class="col-md-6">
+            <div class="card border-0 mb-4">
+              <img class="card-img-top" src="{{blogs.img.url}}" alt="wrappixel kit">
+              <div class="date-pos text-center text-white p-3 bg-success-gradiant">{{blogs.author}} &nbsp; &nbsp; {{blogs.date}}</div>
+              <h6 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">{{blogs.desc}}</a></h6>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- Column -->
+<!--          <div class="col-md-6">-->
+<!--            <div class="card border-0 mb-4">-->
+<!--              <a href="#"><img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img6.jpg" alt="wrappixel kit"></a>-->
+<!--              <div class="date-pos text-center text-white p-3 bg-success-gradiant">JOHN DOE &nbsp; &nbsp; SEPT 15, 2017</div>-->
+<!--              <h6 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">New Seminar on Newest Food Recipe</a></h6>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!-- Column -->
+<!--          <div class="col-md-6">-->
+<!--            <div class="card border-0 mb-4">-->
+<!--              <a href="#"><img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img7.jpg" alt="wrappixel kit"></a>-->
+<!--              <div class="date-pos text-center text-white p-3 bg-success-gradiant">JOHN DOE &nbsp; &nbsp; SEPT 15, 2017</div>-->
+<!--              <h6 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">New Seminar on Newest Food Recipe</a></h6>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!-- Column -->
+<!--          <div class="col-md-6">-->
+<!--            <div class="card border-0 mb-4">-->
+<!--              <a href="#"><img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img8.jpg" alt="wrappixel kit"></a>-->
+<!--              <div class="date-pos text-center text-white p-3 bg-success-gradiant">JOHN DOE &nbsp; &nbsp; SEPT 15, 2017</div>-->
+<!--              <h6 class="font-weight-medium mt-3"><a href="#" class="link text-decoration-none">New Seminar on Newest Food Recipe</a></h6>-->
+<!--            </div>-->
+<!--          </div>-->
+          <!-- Column -->
+        </div>
+      </div>
+      <!-- Column -->
+    </div>
+  </div>
+</div>
+{% endblock %}
